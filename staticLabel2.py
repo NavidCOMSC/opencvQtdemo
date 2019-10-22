@@ -1,7 +1,7 @@
 from PyQt5 import QtWidgets, QtGui, QtCore
 from PyQt5.QtWidgets import QWidget, QApplication, QLabel, QVBoxLayout, QHBoxLayout
 from PyQt5.QtGui import QPixmap, QImage, QColor
-from PyQt5.QtCore import pyqtSignal, pyqtSlot, Qt,QObject
+from PyQt5.QtCore import pyqtSignal, pyqtSlot, Qt, QObject
 import sys
 import cv2
 
@@ -9,6 +9,7 @@ import cv2
 class App(QWidget):
     def __init__(self):
         super().__init__()
+        self.setGeometry(500, 500, 640, 480)
         self.setWindowTitle("Qt static label demo")
         self.disply_width = 640
         self.display_height = 480
